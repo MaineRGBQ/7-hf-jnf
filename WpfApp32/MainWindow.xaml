@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp32.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Runaway Button" Height="350" Width="525">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Button x:Name="btnRunAway" Content="Догони меня!" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" MouseEnter="btnRunAway_MouseEnter">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2DADFF" Offset="0.602"/>
+                    <GradientStop Color="#FF000C6D" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
